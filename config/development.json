@@ -1,0 +1,5 @@
+{
+    "namespace": "parking_lot_management",
+	"node_port": "4000",
+	"mongo_db_url": "mongodb://localhost:27017/parking_lot_management"
+}

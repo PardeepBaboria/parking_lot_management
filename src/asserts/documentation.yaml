@@ -1,0 +1,112 @@
+paths:
+  /parking-lot/list:
+    get:
+      tags:
+      - "parking-lot"
+      summary: "Api to get List of Parking Lots and Vehicle Support and Capacity"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: query
+        name: parking_lot_id
+        schema:
+          type: string
+        description: Id of Parking Lot to get a Data of Specific parking lot
+      responses:
+        "400":
+          description: "Bad Request"
+        "200":
+          description: "Success"
+  /parking/list:
+    get:
+      tags:
+      - "parking"
+      summary: "Api to get List of Vehicle Parking"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: query
+        name: vehicle_number
+        schema:
+          type: string
+        description: Number of Vehicle to get a Data of Specific Vehicle
+      responses:
+        "400":
+          description: "Bad Request"
+        "200":
+          description: "Success"
+  /parking/park-in:
+    post:
+      tags:
+      - "parking"
+      summary: "Api to Park In a Vehicle"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Object that needs to Park In a Vehicle"
+        required: true
+        schema:
+          $ref: "#/definitions/ParkIn"
+      responses:
+        "400":
+          description: "Bad Request"
+        "200":
+          description: "Success"
+  /parking/park-out:
+    post:
+      tags:
+      - "parking"
+      summary: "Api to get Park Out a Vehicle"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Object that needs to Park Out a Vehicle"
+        required: true
+        schema:
+          $ref: "#/definitions/ParkOut"
+      responses:
+        "400":
+          description: "Bad Request"
+        "200":
+          description: "Success"
+definitions:
+  ParkIn:
+    type: object
+    properties:
+      vehicle_number:
+        type: string
+        required: true
+      parking_lot_vehicle_id:
+        type: string
+        required: true
+      vehicle_name:
+        type: string
+      customer:
+        type: object
+        properties:
+          name:
+            type: string
+          contact:
+            type: string
+  ParkOut:
+    type: object
+    properties:
+      vehicle_number:
+        type: string
+        required: true

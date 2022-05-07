@@ -1,0 +1,5 @@
+{
+	"namespace": "parking_lot_management",
+	"node_port": "<node_port_number>",
+	"mongo_db_url": "<mongo_db_url>"
+}

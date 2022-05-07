@@ -1,0 +1,73 @@
+[
+	{
+		"title": "South Pacific",
+		"address": "1766 Mayfield Park",
+		"contact_number": "+86 853 505 3324",
+		"vehicles": [
+			{
+				"type": "Two-Wheeler",
+				"capacity": 5,
+				"charge_per_two_hours": 20
+			},
+			{
+				"type": "Hatchback Car",
+				"capacity": 3,
+				"charge_per_two_hours": 40
+			},
+			{
+				"type": "SUV Car",
+				"capacity": 4,
+				"charge_per_two_hours": 60
+			}
+		]
+	},
+	{
+		"title": "Big Trail",
+		"address": "701 Porter Plaza",
+		"contact_number": "+62 750 155 0895",
+		"vehicles": [
+			{
+				"type": "Two-Wheeler",
+				"capacity": 6,
+				"charge_per_two_hours": 25
+			},
+			{
+				"type": "Hatchback Car",
+				"capacity": 4,
+				"charge_per_two_hours": 45
+			},
+			{
+				"type": "SUV Car",
+				"capacity": 2,
+				"charge_per_two_hours": 65
+			},
+			{
+				"type": "XUV Car",
+				"capacity": 4,
+				"charge_per_two_hours": 85
+			}
+		]
+	},
+	{
+		"title": "State of Play",
+		"address": "86342 Dayton Court",
+		"contact_number": "+94 200 121 5714",
+		"vehicles": [
+			{
+				"type": "Two-Wheeler",
+				"capacity": 3,
+				"charge_per_two_hours": 20
+			},
+			{
+				"type": "Hatchback Car",
+				"capacity": 3,
+				"charge_per_two_hours": 40
+			},
+			{
+				"type": "XUV Car",
+				"capacity": 2,
+				"charge_per_two_hours": 90
+			}
+		]
+	}
+]
