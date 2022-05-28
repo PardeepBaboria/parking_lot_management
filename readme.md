@@ -1,4 +1,4 @@
-# Legistify Parking Lot Management Assignment
+# Parking Lot Management
 > Buid using NodeJS, Express and MongoDB
 
 ## Assignment
